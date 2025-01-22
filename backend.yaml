@@ -37,9 +37,8 @@
       remote_src: yes
   
   - name: Install dependencies
-    community.general.npm:
-      path: /app
-
+    ansible.builtin.command: npm install
+    
   - name: copy backend service
     ansible.builtin.copy:
       src: backend.service
