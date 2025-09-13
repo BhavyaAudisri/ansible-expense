@@ -28,7 +28,7 @@
       login_user: root
       login_password: "{{ mysql_root_password }}"
       #login_host: mysql.somisettibhavya.life 
-      login_host: 72.31.28.246
+      login_host: 172.31.28.246
     register: mysql_info
     ignore_errors: true
 
